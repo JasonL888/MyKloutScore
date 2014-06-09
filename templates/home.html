@@ -1,0 +1,26 @@
+<div ng-controller="MainController">
+	<div class="kloutData panel panel-danger" ng-hide="errorMessage">
+		<div class="kloutScore panel-heading">{{score | number:2}}</div>
+		<div class="kloutDelta panel-body">
+			<div class="kloutDeltaEntry">
+				<div class="kloutDeltaItem">Day:</div>
+				<div class="kloutDeltaValue" ng-class="(scoreDelta.dayChange<0)?'text-danger':'text-success'">{{scoreDelta.dayChange | number:2}}</div>
+			</div>
+			<div class="kloutDeltaEntry">
+				<div class="kloutDeltaItem">Week:</div>
+				<div class="kloutDeltaValue" ng-class="(scoreDelta.weekChange<0)?'text-danger':'text-success'">{{scoreDelta.weekChange | number:2}}</div>
+			</div>
+			<div class="kloutDeltaEntry">
+				<div class="kloutDeltaItem">Month:</div>
+				<div class="kloutDeltaValue" ng-class="(scoreDelta.monthChange<0)?'text-danger':'text-success'">{{scoreDelta.monthChange | number:2}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="kloutError panel panel-danger" ng-show="errorMessage">
+		<div class="kloutErrorHead panel-heading">Error</div>
+		<div class="kloutErrorBody panel-body text-danger">
+			<div class="kloutErrorMessage">{{errorMessage}}</div>
+			<div class="kloutErrorLink"><a href="./options.html" target="_blank">Click To Fix</a></div>
+		</div>
+	</div>
+</div>

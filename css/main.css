@@ -1,0 +1,62 @@
+/************************
+ * CSS for Klout score pop-up screen
+ ************************/
+.kloutData {
+	width: 120px;
+}
+.kloutScore {
+	font-size:200%;
+	text-align: center;
+}
+.kloutDelta {
+	display: table;
+}
+.kloutDeltaEntry {
+	display: table-row;
+}
+.kloutDeltaItem, .kloutDeltaValue {
+	display: table-cell;
+}
+.kloutDeltaItem {
+	font-style: italic;
+	text-align: left;
+}
+.kloutDeltaValue {
+	font-weight: bold;
+	text-align: right;
+}
+.kloutError {
+	width: 200px;
+}
+.kloutErrorHead {
+	font-size:200%;
+	text-align: center;
+}
+.kloutErrorMessage {
+	text-align: justify;
+}
+.kloutErrorLink {
+	text-align: center;
+}
+
+/************************
+ * CSS for options screen
+ ************************/
+ .optionsForm {
+	width: 400px; 
+ 	margin: 0 auto;
+ }
+ .optionsStatusMsg {
+	font-weight: bold;
+}
+.optionsBorder {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	border-radius: 4px 4px 0 0;
+	padding: 10px;
+	margin: 10px;
+}
+input, button {
+	margin-top:10px
+}
